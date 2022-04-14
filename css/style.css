@@ -1,3 +1,7 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
 html {
   font-family: "robotoregular";
   color: rgb(63, 63, 63);
@@ -19,4 +23,22 @@ nav {
 }
 section {
   padding: 5px;
+}
+p {
+  margin: 0;
+  padding: 0.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0.2em;
+  text-align: center;
+}
+.formula{
+  text-align: center;
 }
