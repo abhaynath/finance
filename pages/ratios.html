@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="../fonts/roboto-bold/roboto-bold.css" />
     <link rel="stylesheet" href="../fa/css/all.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/katex.min.css" />
+    <script src="../js/katex.min.js"></script>
+
     <title>Ratios</title>
   </head>
   <body>
+    <nav>
+      <a href="../index.html"> <i class="fa fa-home"></i></a>
+    </nav>
     <section id="pe">
       <h4>PE</h4>
+      <a
+        href="https://www.investopedia.com/ask/answers/070314/how-do-i-calculate-pe-ratio-company.asp"
+        >investopedia</a
+      >
       <p>What Is the Price-to-Earnings (P/E) Ratio?</p>
       <p>
         The price-to-earnings ratio (P/E ratio) is the ratio for valuing a
@@ -49,8 +59,16 @@
           Two kinds of P/E ratios&#x2014;forward and trailing P/E&#x2014;are
           used in practice.
         </li>
-        
       </ul>
+      <h4 id="peratio"></h4>
     </section>
   </body>
+  <script>
+    var peratio = document.getElementById("peratio");
+    katex.render(
+      String.raw`P/E \ Ratio = \frac{Price \ per \ Share}{Earnings \ per \ share}`,
+      peratio,
+      { throwOnError: false }
+    );
+  </script>
 </html>
