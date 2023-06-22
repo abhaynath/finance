@@ -15,6 +15,7 @@
   <body>
     <div id="el"></div>
     <div id="el1"></div>
+    <div id="el2"></div>
     <ol>
       <li>
         <a href="pages/ratios.html"><i class="fa fa-search"></i>Ratio</a>
@@ -32,10 +33,17 @@
     <script>
       var element = document.getElementById("el");
       var element1 = document.getElementById("el1");
+      var element2 = document.getElementById("el2");
       katex.render("c = \\pm\\sqrt{a^2 + b^2}", element, {
         throwOnError: false,
       });
       katex.render("\\frac{a}{b}", element1, { throwOnError: false });
+
+      var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}", {
+        throwOnError: false,
+      });
+      console.log(html);
+      element2.innerHTML = html;
     </script>
   </body>
 </html>
